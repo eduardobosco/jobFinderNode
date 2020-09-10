@@ -4,7 +4,7 @@
     "description": "Projeto Node Express ",
     "main": "app.js",
     "scripts": {
-        "dev": "nodemon app.js"
+        "dev": "nodemon app.js" //salva automatico, sem reiniciar servidor
     },
     "keywords": [
         "dev",
