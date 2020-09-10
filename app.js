@@ -56,9 +56,12 @@ app.get('/', (req, res) => {
             })
             .catch(err => console.log(err));
     } else {
-        Job.findAll({
-                where: { title: {
-                        [Op.like]: query } },
+        Job.findAll({ //consulta baseada no titulo que contenha a palavra
+                where: {
+                    title: {
+                        [Op.like]: query
+                    }
+                },
                 order: [
                     ['createdAt', 'DESC']
                 ]
